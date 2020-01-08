@@ -10,4 +10,7 @@ describe('isPalindrome_testing', () => {
         assert.equal(isPalindrome('ogo'), true)
     });
 
+    it('isPalindrome_axaAXAaXa_True', () => {
+        assert.equal(isPalindrome('axaAXAaXa'), true)
+    });
 })

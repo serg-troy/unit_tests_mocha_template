@@ -1,4 +1,4 @@
-module.exports = {sum, mult, isAdult, isPalindrome};
+module.exports = {sum, mult, isAdult, isPalindrome, sortArrayUp, oddOrEven};
 
 
 function sum(a, b){
@@ -13,16 +13,13 @@ function isAdult(age){
 }
 
 function isPalindrome(str){
-    return str.split('').reverse().join('') === str;
+    return str.split('').reverse().join('').toLowerCase() === str.toLowerCase();
 }
 
+function sortArrayUp(arr){
+    return arr.sort((a, b) => a - b);
+}
 
-
-
-
-
-// // func sortArrayUp ( [2, 3, 4, 0, 1]) ---> [0, 1, 2, 3, 4]
-// // function isOddNumber,
-// // function isEvenNumber
-// // все аккуратно оформите и опубликуйте в github у себя
-// // docs https://nodejs.org/api/assert.html (edited)
+function oddOrEven(n){
+    return n % 2 ? 'odd' : 'even';
+}
