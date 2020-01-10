@@ -9,7 +9,7 @@ function mult(a, b){
 }
 
 function isAdult(age){
-    return age < 0 ? null : age > 17;
+    return age < 0 ? 'Check the age!' : age > 17;
 }
 
 function isPalindrome(str){
