@@ -1,7 +1,3 @@
-module.exports = {sum, mult, isAdult, isPalindrome, sortArrayUp, oddOrEven,
-    isIntegerArray, permuteAPalindrome, validPasscode, removeDuplicates, mostValChar};
-
-
 function sum(a, b){
     return a + b;
 }
@@ -58,3 +54,6 @@ function mostValChar(str){
     }
     return result.sort()[0];
 }
+
+module.exports = {sum, mult, isAdult, isPalindrome, sortArrayUp, oddOrEven,
+    isIntegerArray, permuteAPalindrome, validPasscode, removeDuplicates, mostValChar};
