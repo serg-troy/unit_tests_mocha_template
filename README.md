@@ -38,6 +38,3 @@ Chai is BDD/TDD assertion library that can be paired with any javascript testing
 Assertion with Chai provides natural language assertions, expressive and readable style.  
 Installation: (Run the below commands in terminal or cmd)  
 `npm install --save-dev chai`
-
-* ### [Functions](index.js)
-* ### [Unit Tests](test)
