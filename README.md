@@ -7,6 +7,12 @@ with a set of basic but useful and famous algorithms,
 that you can find interesting to know. The core idea with unit 
 testing is to test a function when giving it certain set of inputs.
 
+Mocha and Chai are two JavaScript frameworks commonly used together for unit testing. Mocha is a testing 
+framework that provides functions that are executed according in a specific order, and that logs their 
+results to the terminal window. Chai is an assertion library that is often used alongside Mocha. 
+It provides functions and methods that help you compare the output of a certain test with its 
+expected value. Chai provides clean syntax that almost reads like English.
+
 ## 2. Prerequisites
 ### _2.1. Node_  
 Your Machine should have node and npm installed.
@@ -20,7 +26,7 @@ You can use these commands to check the successful installation of node and npm.
 Mocha is a JavaScript Test Framework that 
 runs on Node.js and Browser.  
 Installation: (Run the below commands in terminal or cmd)  
-`npm install --global mocha`
+`npm install --global mocha`  
 `npm install --save-dev mocha`  
 
 Note: To run Mocha, we need Node.js v4 or newer.  
