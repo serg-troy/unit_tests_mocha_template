@@ -1,9 +1,12 @@
 const assert = require('assert');
+const {expect} = require('chai');
+
 const {isAdult} = require('../index.js');
 
 describe('isAdult_testing', () => {
     it('isAdult_AgeLessThan18_False', () => {
         assert.equal(isAdult(17), false);
+        expect(isAdult(17)).false;
     });
 
     it('isAdult_AgeMoreThan17_True', () => {
@@ -12,5 +15,6 @@ describe('isAdult_testing', () => {
 
     it('isAdult_AgeLessThan0_Null', () => {
         assert.equal(isAdult(-7), null)
+        expect(isAdult(-7)).null;
     });
 })
