@@ -32,5 +32,12 @@ Installation: (Run the below commands in terminal or cmd)
 Note: To run Mocha, we need Node.js v4 or newer.  
 `—- global` helps to install the Mocha on computer at global level which helps to run mocha test through command line.  
 `—- save-dev` helps to add the mocha as dependency in package.json file for that particular project.
+
+### _2.2 Chai_
+Chai is BDD/TDD assertion library that can be paired with any javascript testing framework.  
+Assertion with Chai provides natural language assertions, expressive and readable style.  
+Installation: (Run the below commands in terminal or cmd)  
+`npm install --save-dev chai`
+
 * ### [Functions](index.js)
 * ### [Unit Tests](test)
