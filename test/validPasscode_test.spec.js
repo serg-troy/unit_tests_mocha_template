@@ -3,6 +3,7 @@ const {expect} = require('chai');
 
 const {validPasscode} = require('../index.js');
 
+
 describe('validPasscode_testing', () => {
     it('validPasscode_9119_true', () => {
         expect(validPasscode('9119')).true;

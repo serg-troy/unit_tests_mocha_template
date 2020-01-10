@@ -3,6 +3,7 @@ const {expect} = require('chai');
 
 const {mostValChar} = require('../index.js');
 
+
 describe('mostValChar_testing', () => {
     it('mostValChar_bioooooffb_b', () => {
         expect(mostValChar('bioooooffb')).eq('b');

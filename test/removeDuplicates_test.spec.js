@@ -3,6 +3,7 @@ const {expect} = require('chai');
 
 const {removeDuplicates} = require('../index.js');
 
+
 describe('removeDuplicates_testing', () => {
     it('removeDuplicates_worksCorrectly', () => {
         expect(removeDuplicates([9, 6, 3, 1, 10, -5, -3, 9, 6, 1])).deep.eq([9, 6, 3, 1, 10, -5, -3]);
