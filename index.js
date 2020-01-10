@@ -1,4 +1,4 @@
-module.exports = {sum, mult, isAdult, isPalindrome, sortArrayUp, oddOrEven};
+module.exports = {sum, mult, isAdult, isPalindrome, sortArrayUp, oddOrEven, isIntegerArray};
 
 
 function sum(a, b){
@@ -22,4 +22,8 @@ function sortArrayUp(arr){
 
 function oddOrEven(n){
     return n % 2 ? 'odd' : 'even';
+}
+
+function isIntegerArray(arr) {
+    return !!arr ? arr.every(x => Number.isInteger(x)) : false;
 }
