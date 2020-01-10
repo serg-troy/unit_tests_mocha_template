@@ -3,6 +3,7 @@ const {expect} = require('chai');
 
 const {isIntegerArray} = require('../index.js');
 
+
 describe('isIntegerArray_worksCorrectly', () => {
     it('sortArrayUp_getCorrectResult', () => {
         expect(isIntegerArray([9, 6, 3, 1, 10, -5, -3])).true;

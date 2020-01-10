@@ -14,7 +14,12 @@ describe('sum_Testing', () => {
     });
 });
 
+describe('mult_testing', () => {
+    it('mult_10by5_equals50', () => {
+        expect(mult(10, 5)).to.eq(50);
+    });
 
-it('mult_10by5_equals50', () => {
-    expect(mult(10, 5)).to.eq(50);
+    it('mult_0by1_notEquals1', () => {
+        expect(mult(0, 1)).not.to.eq(1);
+    });
 });

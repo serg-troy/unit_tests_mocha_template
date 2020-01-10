@@ -1,4 +1,5 @@
-module.exports = {sum, mult, isAdult, isPalindrome, sortArrayUp, oddOrEven, isIntegerArray};
+module.exports = {sum, mult, isAdult, isPalindrome, sortArrayUp, oddOrEven,
+    isIntegerArray, permuteAPalindrome, validPasscode, removeDuplicates, mostValChar};
 
 
 function sum(a, b){
@@ -24,6 +25,36 @@ function oddOrEven(n){
     return n % 2 ? 'odd' : 'even';
 }
 
-function isIntegerArray(arr) {
+function isIntegerArray(arr){
     return !!arr ? arr.every(x => Number.isInteger(x)) : false;
+}
+
+function permuteAPalindrome (input){
+    let obj = {}, strike = 0;
+    input.split('').forEach(x => obj.hasOwnProperty(x) ? obj[x]++ : obj[x] = 1);
+    for (let key in obj) {
+        if (obj[key] % 2) strike++;
+    }
+    return strike > 1 ? false : true;
+}
+
+function validPasscode(pass){
+    return /^(\d{4}|\d{6})$/.test(pass);
+}
+
+function removeDuplicates(arr) {
+    return arr.filter((x, i) => i === arr.indexOf(x));
+}
+
+function mostValChar(str){
+    let max = 0, result = [], dif;
+    for (let x of str){
+        dif = str.lastIndexOf(x) - str.indexOf(x);
+        if (max < dif) max = dif;
+    }
+    for (let x of str){
+        dif = str.lastIndexOf(x) - str.indexOf(x);
+        if (dif === max) result.push(x);
+    }
+    return result.sort()[0];
 }
