@@ -1,4 +1,4 @@
-**# Unit Testing using Mocha and Chai (NodeJS)**
+#  **Unit Testing using Mocha and Chai (NodeJS)**
 
 ## 1. Overview
 The purpose of this project is to learn how to use Mocha/Chai 
