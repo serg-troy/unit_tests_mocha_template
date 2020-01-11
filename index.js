@@ -27,6 +27,7 @@ function isIntegerArray(arr){
 
 function permuteAPalindrome (input){
   let obj = {}, strike = 0;
+  // eslint-disable-next-line no-prototype-builtins
   input.split('').forEach(x => obj.hasOwnProperty(x) ? obj[x]++ : obj[x] = 1);
   for (let key in obj) {
     if (obj[key] % 2) strike++;
